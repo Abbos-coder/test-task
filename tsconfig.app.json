@@ -1,0 +1,31 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/**/**/*.vue",
+    "vite.config.ts"
+  ],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "allowSyntheticDefaultImports": true,
+    "composite": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "types": ["node"],
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}
